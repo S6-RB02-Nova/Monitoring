@@ -4,6 +4,9 @@ Monitoring services for Nova Microservices
 Create a namespace first.
 `kubectl create namespace monitoring`
 
+Apply the all deployment files. This command will search recursively for all the nested deployment files.
+`kubectl apply -f k8s\ -R`
+
 Get the monitoring pods.
 `kubectl get pods --namespace=monitoring`
 
